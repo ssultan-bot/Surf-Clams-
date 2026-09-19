@@ -1,0 +1,41 @@
+# --- data & outputs (never commit the dataset or generated results) ---------
+data/
+outputs/
+# lines saved by pick_line.py / studio.py -- per-run output, not code
+# (gitignore has no end-of-line comments: a trailing "# ..." becomes part of
+#  the pattern and silently matches nothing)
+results/
+*.png
+*.jpg
+*.jpeg
+*.csv
+!docs/**/*.png        # (allow doc images if we add any later)
+
+# --- model weights & caches -------------------------------------------------
+models/
+*.pt
+*.pth
+*.pytorch
+*.caffemodel
+*.onnx
+*.safetensors
+*.bin
+.cache/
+.mpl_cache/
+*.npy
+
+# --- python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- IDE / OS junk (the stuff that polluted the old repo) --------------------
+.idea/
+.vscode/
+.DS_Store
+._*
+Thumbs.db
+~$*
